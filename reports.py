@@ -70,7 +70,3 @@ def get_line_number_by_title(file_name, title):
         return "There is no game with that title"
     except FileNotFoundError:
         return "Invalid file name"
-
-
-
-print(count_games("/home/daniel/codecool/3rd_si/pbwp-3rd-si-game-statistics-flachdaniel/game_stat.txt"))
