@@ -33,5 +33,11 @@ def get_selling_avg(file_name):
     table = to_list(file_name)
     return copies/len(table)
 
+def get_game(file_name, title):
+    table = to_list(file_name)
+    for i in range (len(table)):
+        if title == table[i][0]:
+            return table[i]
+    return "There is no game with that title"
 
-print (get_selling_avg("/home/daniel/codecool/3rd_si/pbwp-3rd-si-game-statistics-flachdaniel/part2/game_stat.txt"))
+print (get_game("/home/daniel/codecool/3rd_si/pbwp-3rd-si-game-statistics-flachdaniel/part2/game_stat.txt","Minecraft"))
